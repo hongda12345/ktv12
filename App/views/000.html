@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*let str='ab12cd3456ef78g9';
+    let arr=[];
+    let res='';
+    for(let i=0;i<str.length;i++){
+        if(str[i]>=0&&str[i]<=9){
+            res+=str[i];
+        }else{
+            if(res){
+                arr.push(res);
+                res='';
+            }
+        }
+    }
+    if(res){
+        arr.push(res);
+        res='';
+    }*/
+    ////////正则///////////////////////////////////////////////////////////////////////
+    /*let reg=/\d+/g;
+    let arr=str.match(reg);
+    console.log(arr);*/
+    ///////创建正则对象的两种方法////////////////////////////////////////
+    /*let reg=/a/;
+    let reg1=new RegExp('a');
+    let str='abcdef';
+    console.log(reg.test(str));//返回布尔值
+    console.log(reg.exec(str));//返回数组*/
+//    let str='a12bc3d456efg78';
+//    let reg=/[0,1,2,3,4,5,6,7,8,9]/;
+//    let reg=/[q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m]/;
+//    let reg=/[0-9][0-9]/g;//g:模式修正符，全局匹配。继续往下走。
+//    let reg=/[0-9a-zA-Z]{6}/;//{}:量词 重复6次
+   /* let reg=/<[a-z][a-z1-6]{0,8}>/;//第二位最少0次，最多8次
+//    let res=reg.exec(str);
+    console.log(reg.test('<span>'));*/
+//   let phone=/[0-9]{11}/
+    let sfz=/[0-9]{17}[0-9X]/;
+    let zs='142631199605054513';
+    console.log(sfz.test(zs));
+    //邮箱验证
+    //一串数字字母 @ 一串数字字母 \. 一串数字字母
+</script>
+</body>
+</html>
